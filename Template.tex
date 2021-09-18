@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape \href{https://linkedin.com/in/vishalroy2198/}{Vishal Kumar Roy}} \\ \vspace{5pt}
+    % \small\href{https://github.com/vishalroy2198}{\faAt\ \underline{My Portfolio}}
+    \vspace{5pt}
+    
+    \small \raisebox{-0.1\height}\faPhone\ +91-9334877009 ~ \href{mailto:vishalroy2198@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vishalroy2198@gmail.com}} ~ 
+    \href{https://linkedin.com/in/vishalroy2198/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vishalroy2198}}  ~
+    \href{https://github.com/vishalroy2198}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/vishalroy2198}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institue Of Technology, Mesra}{Aug. 2017 -- July 2021}
+      {Bachelor of Engineering in Computer Science: CGPA: 7.15}{Ranchi, Jharkhand }
+  
+    \resumeSubheading
+      {Gyan Niketan}{April. 2015 -- June 2017}
+      {XII (Senior Secondry),Science: Percentage: 82.6}{Patna, Bihar }
+      
+    % \resumeSubheading
+    %   {Gyan Niketan}{April. 2013 -- May 2015}
+    %   {X (Secondry),Science: CGPA: 9.4}{Patna, Bihar }
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=5pt]
+                \item\small Data Structures
+                \item Machine Learning
+                \item Algorithms Design
+                \item Data Mining
+                \item OOPS using Java
+                \item Probability \& Statistics
+                \item Database Management
+                \item Discrete Mathematics
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+    
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{:  JAVA, C, C++, Python, SQL} \\
+     \textbf{Programming}{:Data Structures, Algorithms, Machine Learning, RDBMS, OOPS, SDLC} \\
+    %  \textbf{Web Technologies/Frameworks}{: HTML/CSS, ReactJS, NodeJS} \\
+     \textbf{Tools and Libraries}{: Sci-kit learn, NumPy, Pandas, Matplotlib, GitHub, Google Colab} \\
+     
+    %  \textbf{Development Tools}{: VSCode, Jupyter Notebook, Google Colab, GitHub} \\
+    
+    }}
+ \end{itemize}
+ \vspace{-22pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Argano Keste}{August 2021 -- Present}
+      {Software Engineer}{New Delhi, India}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+    %     \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+    %     \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+    %     \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {JPMorgan Chase \& Co. }{May 2020 -- August 2020}
+      {Software Engineer Intern}{Bangalore, India}
+    %   \resumeItemListStart
+    %     \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+    %     \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+    %     \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+    %     \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    % \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/vishalroy2198/Deep-Learning-NLP-ChatBot}{Deep NLP Chatbot}} $|$ \emph{Python, Tensorflow, Google Colab}}{February 2021}
+          \resumeItemListStart
+            \resumeItem{Built Deep NLP ChatBot Using Tensorflow.}
+            \resumeItem{Built encoder RNN layer and decoder RNN layer and joined them to build and implement full Seq2Seq layer.}
+          \resumeItemListEnd
+          \vspace{-17pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/vishalroy2198/Popular-Sorting-Algorithms-Visualizer}{Sorting Algorithm Visualizer}} $|$ \emph{HTML, CSS, JavaScript, VSCode}}{December 2020}
+          \resumeItemListStart
+            \resumeItem{Built JavaScript application for visualizing sorting algorithms.}
+            \resumeItem{Implemented Bubble Sort, Selection Sort, Insertion Sort, Heap Sort, Quick Sort, Merge Sort.}
+          \resumeItemListEnd 
+          \vspace{-17pt}
+          \resumeProjectHeading
+          {\textbf{\href{https://github.com/vishalroy2198/DNA-Sequences-Classification}{DNA Sequences Classification}} $|$ \emph{Python, Keras, Google Colab}}{September 2019}
+          \resumeItemListStart
+            \resumeItem{Explored the world of bioinformatics by using Markov models, K-Nearest Neighbor(KNN), Support Vector Machines(SVM) to classify short E. Coli DNA Sequences.}
+            \resumeItem{Used a data set from the UCI Machine Learning Repository that has 106 DNA sequences, with 57 sequential nucleotide (“base-pairs”) each.}
+          \resumeItemListEnd
+          \vspace{-17pt}
+           \resumeProjectHeading
+          {\textbf{\href{https://github.com/vishalroy2198/NodeJs-Weather-Website}{Weather App}} $|$ \emph{HTML/CSS, JavaScript, NodeJS, VSCode}}{June 2019}
+          \resumeItemListStart
+            \resumeItem{Built a fully functional Weather App using NodeJS.}
+            \resumeItem{The App shows the temperature of the selected location.}
+            \resumeItem{The App uses the Weather API of OpenWeatherMap.Org.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%
+
+%-----------Achievements---------------
+\section{Achievements}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+                \resumeItem{Achieved 94 Percentile in GATE CSE 2021 with a rank of AIR-6429 among 101922 candidates.}
+                \resumeItem{Got selected in Top 50 Finalist of HACK-A-BIT 2019 among 700+ teams from all across the country.}
+                \resumeItem{2nd Runnerup among 100+ students in ACM CQM conducted by ACM BIT Chapter.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+    \vspace{-20pt}
+
+%-----------Extracurricular-----------
+\section{Position Of Responsiblity/Extracurricular}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Co-ordinator:- ACM BIT Chapter}}{July 2018-July 2019}
+          \resumeItemListStart
+            \resumeItem{Conducted Coding Competitions under ACM CQM on Hackerrank.}
+            \resumeItem{Conducted Seminar on importance of Problem Solving and Data Structures and Algorithms in real life.}
+           
+          \resumeItemListEnd
+          \vspace{-18pt}
+          
+        \resumeProjectHeading
+          {\textbf{Teaching Assistant:- Nav Umeed}}{August 2017-December 2019}
+          \resumeItemListStart
+            \resumeItem{Volunteered to help in conducting the activities of Nav Umeed and to look after the academics and overall development of the beneficiaries.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+
+
+
+\end{document}
